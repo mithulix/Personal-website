@@ -1,0 +1,198 @@
+    /* css variables */
+:root{
+    --light: #fff;
+    --blue: #0066ff;
+    --btnBackground: linear-gradient(45deg, #00ccff, #006cf8);
+    --shadow: .3rem .3rem  .4rem #c9c9c9, -.2rem -.2rem  .5rem #e9e9e9;
+}
+
+body {
+    display: grid;
+    box-sizing: border-box;
+    margin: 0%; padding: 0%;
+    line-height: 1.4;
+    font-family: 'poppins', 'Courier New', Courier, monospace;
+}
+
+
+/* universal */
+p { margin-bottom: 2rem;}
+
+.header img,  .about img,  .latestWork img { max-width: 100%;}
+
+.imageArea { margin-top: -10%;}
+
+.textArea  .btn{
+    text-decoration: none;
+    background: var(--btnBackground);
+    padding: .5rem 1.5rem;
+    margin: 1.3rem 0;
+    border-radius: 5px;
+    color: var(--light);
+    font-weight: 600;
+}
+
+.btn:hover { padding: .6rem 1.7rem;}
+
+
+
+
+    /* header */
+.navbar {
+        float: right;
+        padding: 1.5rem;
+        margin-left: 57%;
+    }
+
+.nav-item {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.header {
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+}
+
+.header h1, .me { font-size: 3rem;}
+
+.header .me { color:var(--blue);}
+
+
+
+
+    /* about */
+.about {
+    display: grid;
+    grid-gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+    margin-top: -5%;
+}
+
+.about h1 { font-size: 2.5rem;}
+
+
+
+    /* latestWork */    
+.latestWork  .textArea h1{ 
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: -1rem;
+}
+
+.latestWork .textArea .lst {
+    color:var(--blue);
+}
+
+.mainImageArea {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10%;
+    border-radius: 1rem;
+}
+
+.mainImageArea .imageArea:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.latestWork  .imageArea { 
+    border-radius: 1rem;
+    padding: 5%;
+    box-shadow: var(--shadow);
+}
+
+.latestWork  .imageArea .text {
+    padding:5%;
+}
+
+
+
+/* skills */
+.skills  .textArea .h1{ 
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: -1rem;
+    color:var(--blue);
+}
+
+
+.skills .mainImageArea .imageArea{
+    display: grid;
+    padding: 10%;
+    border-radius: 1rem;
+
+}
+
+.skills .mainImageArea .imageArea img {
+    margin:0 25%;
+}
+
+.skills .mainImageArea .imageArea .text h1 {
+    font-size: 1.5rem;
+}
+
+.skills  .imageArea { 
+    border-radius: 1rem;
+    padding: 5%;
+    box-shadow: var(--shadow);
+}
+
+
+
+    /* inquiry*/
+.inquiry {
+    display: grid;
+    padding: 5% 20%;
+}
+
+.inquiry h1 {
+    font-size: 3rem;
+}
+
+.inquiry  .textArea {
+    display: grid;
+    grid-template-columns: 1fr .3fr ;
+    color: var(--light);
+    background-image: url(images/shapes/Group_33094_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2rem;
+} 
+
+.inquiry .btn {
+    margin-top: 3.4rem;
+    width: 5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+}
+
+.inquiry .iconArea {
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+.inquiry .iconArea h2 { font-size: 2rem;}
+
+.inquiry .iconArea h3, h2 {
+    line-height: .5;
+    text-align: center;
+    color: black;
+}
+
+.inquiry .icons {
+    margin-top: -3rem;
+    text-align: center;
+}
+
+.inquiry .icons img {
+    height: 3rem;
+    padding: 1rem;
+}
+
